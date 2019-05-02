@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>DOM Manupulation</title>
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">DOM & Javascript</div>
+    
+        <h1>Document Object Model</h1>
+        <p>The DOM is the way Javascript sees its containing pages' data. It is an object that includes how the HTML/XHTML/XML is formatted, as well as the browser state.</p>
+        <p>A DOM element is something like a DIV, HTML, BODY element on a page. You can add classes to all of these using CSS, or interact with them using JS.</p>
+        <h1>Demonstration:</h1>
+        <p>In order to show the relationship between DOM and JS, I have written a function in javascript at the backend that visits the clicked element and it's decendents and returns the type of tag that the child is.</p>
+        <p>Go ahead and click the button to see the magic of JS.</p>
+        <p>
+            <button class="btn btn-primary" onclick="showDomElements()">Click Me to See DOM elements</button>
+            <button class="btn btn-primary" onclick="reset()">Reset</button>
+
+        </p>
+        <div class="new">
+            ​<div id="main" style="display:none;">
+                <h1 id="first"></h1>
+                <ul>
+                    <li>Click to display all tags used.</li>
+                    <li>'#text' shows empty tags</li>
+                </ul>
+                <div>
+                </div>
+                ​<button onclick="showTags()" class="btn btn-primary">View Tags</button>
+            </div> ​
+            <p id="display"></p>
+        </div>
+      
+    </div>
+</body>
+</html>
